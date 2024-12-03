@@ -1,0 +1,228 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+@font-face {
+    font-family: 'poetsenoneregular';
+    src: url('../fonts/poetsenone-regular.woff') format('woff2'),
+         url('../fonts/poetsenone-regular.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*div{
+     border:2px solid black;  
+}*/
+
+/*bar*/
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #4ED3DD;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing:border-box;
+}
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 3rem;
+    right: 4rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.sidebar ul, .sidebar li{
+    margin:0;
+    padding:0;
+    list-style:none inside;
+    font-size: 25px;
+    /*margin-top: 100px;*/   
+}
+
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 60%;
+    min-width:200px;
+    text-align: center;
+    margin-top: 280px;   
+}
+
+@media(max-width:600px){
+   
+    .sidebar ul {
+    margin-top: 220px;
+    width: 80%;
+       
+    }
+
+    .sidebar ul, .sidebar li{
+      
+        font-size: 22px;
+        /*margin-top: 100px;*/   
+    }
+}
+
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+    
+}
+
+.sidebar a:hover{
+    color:#fff;
+    background-color: #FF8676;
+    border-radius: 5px;
+}
+
+#contenido {
+    transition: margin-left .4s;
+    padding: 1rem;  
+}
+
+.abrir-cerrar {
+    color: #2E88C7;
+    font-size:1rem;   
+}
+
+
+#cerrar {
+    display:none;
+}
+
+/* end of the bar */
+
+h1{
+    font-family:'poetsenoneregular';
+    font-size:34px;
+    justify-content: left;
+    color:#FF8676;
+    
+    
+  
+}
+
+.blue{
+    color:#4ED3DD;
+}
+
+h3{
+    font-family: 'poetsenoneregular';
+    font-size:40px;
+    justify-content: left;
+    color:white;
+    padding-top: 20px;
+}
+
+.first_container{
+    height: 100vh;
+    background-image: url(../images/background_Mesa%20de%20trabajo%201.svg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+    border: 2px black;   
+}
+
+.languages{
+    color:#4ED3DD;
+    text-align: center;
+    text-decoration-line: none;
+    
+}
+.languagesdiv a:hover{
+    color:#FF8676;
+}
+
+.languagesdiv{
+    text-align: center;
+    padding: 0%;
+}
+
+.centerone{
+    text-align: center;
+    z-index: 2;
+    position: fixed;
+    margin-top:50px;
+    border-left: 50px;    
+}
+
+@media(max-width:600px){
+   
+     .centerone{
+         
+         text-align: center;
+        margin-left: 15vw;
+        transform: translateX(-40px);
+        margin-top: 10px; 
+     }
+}
+
+.skidiv{
+    
+    margin: auto;
+    max-width: 50px;
+    text-align: center;
+       
+}
+
+.skidiv svg {
+    fill:#FF8676;
+    transition:all 0.35s;
+    transform: scale(1);
+           
+}
+
+.skidiv svg:hover{
+    fill:white;
+    transform: scale(1.2);
+    
+}
+
+.space_1{
+    height: 20vh;
+}
+
+.text_title{
+    padding: 0px;
+    padding-top: 40px;
+    margin: 0px;
+}
+
+@media(max-width:600px){
+   
+     .text_title{
+          padding-top: 30px; 
+    }
+}
+
+
+.maintitle{
+    font-size:38px;
+}
+
+
+.backgroundinf{
+    color:#4ED3DD;
+    text-align:left;
+    font-size: 19px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
